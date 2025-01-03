@@ -1092,7 +1092,7 @@ def main():
             with accelerator.accumulate(model, discriminator):
                 # forward through model
                 model_outputs = model(
-                    input_ids=batch["input_ids"],
+                    input_ids=batch["input_ids"].long(),
                     attention_mask=batch["attention_mask"],
                     labels=batch["labels"],
                     labels_attention_mask=batch["labels_attention_mask"],
