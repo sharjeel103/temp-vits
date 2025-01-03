@@ -1,28 +1,26 @@
 {
-    "project_name": "mms_gujarati_finetuning",
+    "project_name": "mms_urdu_finetuning",
     "push_to_hub": true,
-    "hub_model_id": "ylacombe/mms-tts-guj-train",
+    "hub_model_id": "sharjeel103/mms-tts-urdu-finetune",
     "report_to": ["wandb"],
     "overwrite_output_dir": true,
-    "output_dir": "./tmp/vits_finetuned_guj",
+    "output_dir": "./vits_finetuned_urdu",
+    
 
-    "dataset_name": "ylacombe/google-gujarati",    
-    "dataset_config_name": "male", 
+    "dataset_name": "sharjeel103/urdu_tts_finetune_dataset",    
+    "dataset_config_name": "", 
     "audio_column_name": "audio", 
     "text_column_name":"text",
     "train_split_name": "train",
     "eval_split_name": "train",
-    "speaker_id_column_name": "speaker_id",
-    "override_speaker_embeddings": true,
-    "filter_on_speaker_id": 5251,
 
-    "full_generation_sample_text": "આજે દુબલીમાં ગરમી છે, શું આશ્ચર્ય છે",
+    "full_generation_sample_text": "کیا حال ہے؟",
     
     "max_duration_in_seconds": 20,
     "min_duration_in_seconds": 1.0,
     "max_tokens_length": 500,
 
-    "model_name_or_path": "ylacombe/mms-tts-guj-train",
+    "model_name_or_path": "sharjeel103/mms-tts-urdu",
 
 
     "preprocessing_num_workers": 4,
